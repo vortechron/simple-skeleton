@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `name` varchar(191) NOT NULL,
   `email` varchar(191) NOT NULL,
   `password` varchar(191) NOT NULL,
+  `role` varchar(191) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 COMMIT;
