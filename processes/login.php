@@ -1,6 +1,9 @@
 <?php
 include "../global.php";
-// var_dump($_POST);
+
+// success/failure login redirection
+$successPage = "index.php";
+$failurePage = "login.php";
 
 // terima username dan password
 $username = $_POST['username'];
@@ -15,7 +18,7 @@ if ($result->num_rows > 0) {
     $_SESSION['auth'] = $result->fetch_assoc();
     $_SESSION['errors'] = [
     ];
-    header('Location: ../index.php');
+    header("Location: ../{$successPage}");
     
 } else {
 
@@ -23,6 +26,6 @@ if ($result->num_rows > 0) {
         'Wrong password or email.'
     ];
 
-    header('Location: ../login.php');
+    header("Location: ../{$failurePage}");
 
 }
