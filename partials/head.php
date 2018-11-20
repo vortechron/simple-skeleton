@@ -1,6 +1,6 @@
 <?php
 
-include "config.php";
+include "global.php";
 
 ?>
 
@@ -15,3 +15,5 @@ include "config.php";
     <title><?= $CONFIG['project_name'] ?></title>
 </head>
 <body>
+
+<?php include "navbar.php"; ?>
