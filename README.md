@@ -2,7 +2,7 @@
 
 1. Put this project in your xampp(htdocs)/wampp(www) folder
 
-2. Configure database.php
+2. Import database.sql into your phpmyadmin
 
 3. Configure config.php
 
